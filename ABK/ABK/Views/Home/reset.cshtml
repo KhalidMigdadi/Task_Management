@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "reset";
+}
+
+<h1>reset</h1>
+
+<form action="HandelReset" >
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <a asp-action="HandelReset" class="btn btn-primary" asp-controller="Home">Reset</a>
+</form>
+

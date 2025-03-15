@@ -1,0 +1,389 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\page\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\page\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\shared\\_layout_home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\shared\\_layout_home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\user\\changepssword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\user\\changepssword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\user\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\user\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\user\\verifycode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\user\\verifycode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\user\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\user\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\page\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\page\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\page\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\page\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\wwwroot\\page\\css\\style.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\wwwroot\\page\\css\\style.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\user\\log_reg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\user\\log_reg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\crud\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\crud\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\views\\crud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\views\\crud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|c:\\users\\orange\\desktop\\kba project\\abk\\abk\\controllers\\crudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D2811A-5F11-4407-B420-B260AD6EE71C}|ABK\\ABK.csproj|solutionrelative:abk\\controllers\\crudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\appsettings.json",
+              "RelativeDocumentMoniker": "ABK\\appsettings.json",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\appsettings.json",
+              "RelativeToolTip": "ABK\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-15T14:24:46.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\User\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\ResetPassword.cshtml",
+              "RelativeToolTip": "ABK\\Views\\User\\ResetPassword.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAcwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T13:56:00.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VerifyCode.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\VerifyCode.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\User\\VerifyCode.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\VerifyCode.cshtml",
+              "RelativeToolTip": "ABK\\Views\\User\\VerifyCode.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAI0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T13:01:13.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChangePssword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\ChangePssword.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\User\\ChangePssword.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\ChangePssword.cshtml",
+              "RelativeToolTip": "ABK\\Views\\User\\ChangePssword.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwFYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T12:31:41.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "style.scss",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\wwwroot\\Page\\css\\style.scss",
+              "RelativeDocumentMoniker": "ABK\\wwwroot\\Page\\css\\style.scss",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\wwwroot\\Page\\css\\style.scss",
+              "RelativeToolTip": "ABK\\wwwroot\\Page\\css\\style.scss",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAH0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-03-15T10:11:16.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Page\\contact.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\Page\\contact.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Page\\contact.cshtml",
+              "RelativeToolTip": "ABK\\Views\\Page\\contact.cshtml",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAowM8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T10:04:48.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "about.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Page\\about.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\Page\\about.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Page\\about.cshtml",
+              "RelativeToolTip": "ABK\\Views\\Page\\about.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T10:04:22.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout_Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Shared\\_Layout_Home.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\Shared\\_Layout_Home.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Shared\\_Layout_Home.cshtml",
+              "RelativeToolTip": "ABK\\Views\\Shared\\_Layout_Home.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T09:35:03.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Page\\Index.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\Page\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Page\\Index.cshtml",
+              "RelativeToolTip": "ABK\\Views\\Page\\Index.cshtml",
+              "ViewState": "AgIAAGQBAAAAAAAAAAAUwE4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T09:25:48.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PageController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Controllers\\PageController.cs",
+              "RelativeDocumentMoniker": "ABK\\Controllers\\PageController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Controllers\\PageController.cs",
+              "RelativeToolTip": "ABK\\Controllers\\PageController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T09:22:46.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Log_Reg.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\Log_Reg.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\User\\Log_Reg.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\Log_Reg.cshtml",
+              "RelativeToolTip": "ABK\\Views\\User\\Log_Reg.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T09:21:41.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "ABK\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "ABK\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAUwJwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T09:18:19.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ABK\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Models\\User.cs",
+              "RelativeToolTip": "ABK\\Models\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBUAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T09:14:42.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ToDoTask.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Models\\ToDoTask.cs",
+              "RelativeDocumentMoniker": "ABK\\Models\\ToDoTask.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Models\\ToDoTask.cs",
+              "RelativeToolTip": "ABK\\Models\\ToDoTask.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA8wCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T09:05:48.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\Profile.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\User\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\Profile.cshtml",
+              "RelativeToolTip": "ABK\\Views\\User\\Profile.cshtml",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAUwLYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T02:25:37.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EditProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\EditProfile.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\User\\EditProfile.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\User\\EditProfile.cshtml",
+              "RelativeToolTip": "ABK\\Views\\User\\EditProfile.cshtml",
+              "ViewState": "AgIAALsAAAAAAAAAAAAcwNIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T02:25:07.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\CRUD\\Create.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\CRUD\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\CRUD\\Create.cshtml",
+              "RelativeToolTip": "ABK\\Views\\CRUD\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T00:39:01.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\CRUD\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\CRUD\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\CRUD\\Edit.cshtml",
+              "RelativeToolTip": "ABK\\Views\\CRUD\\Edit.cshtml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAUwK0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T00:39:00.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ABK\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGQBAAAAAAAAAAAQwHUBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T00:34:55.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ABK\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ABK\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAQwGgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T00:33:05.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ABK\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ABK\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAQwCoBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T00:26:31.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CRUDController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Controllers\\CRUDController.cs",
+              "RelativeDocumentMoniker": "ABK\\Controllers\\CRUDController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Controllers\\CRUDController.cs",
+              "RelativeToolTip": "ABK\\Controllers\\CRUDController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAIwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T00:25:19.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ABK\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\KBA project\\ABK\\ABK\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ABK\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwEYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T00:25:07.732Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+}
+
+@model List<ABK.Models.ToDoTask>
+
+
+<div class="main-panel">
+	<div class="content-wrapper">
+		<div class="row" id="proBanner">
+			<i id="bannerClose"></i>
+		</div>
+		<div class="d-xl-flex justify-content-between align-items-start">
+			<h2 class="text-dark font-weight-bold mb-2"> Overview dashboard </h2>
+
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="d-sm-flex justify-content-between align-items-center transaparent-tab-border {">
+					<ul class="nav nav-tabs tab-transparent" role="tablist">
+						<li class="nav-item">
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" id="business-tab" data-toggle="tab" href="#business-1" role="tab" aria-selected="false">Tasks</a>
+						</li>
+						<li class="nav-item">
+						</li>
+						<li class="nav-item">
+						</li>
+					</ul>
+					<div class="d-md-block d-none">
+						<a href="#" class="text-light p-1"><i class="mdi mdi-view-dashboard"></i></a>
+						<a href="#" class="text-light p-1"><i class="mdi mdi-dots-vertical"></i></a>
+					</div>
+				</div>
+				<div class="tab-content tab-transparent-content">
+					<div class="tab-pane fade show active" id="business-1" role="tabpanel" aria-labelledby="business-tab">
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
+								<div class="card">
+									<div class="card-body text-center">
+										<h3 class="mb-2 text-dark font-weight-normal">To Do Tasks</h3>
+										<div class="text-center">
+											<div class="progress-circle">
+												<svg width="120" height="120">
+													<circle cx="60" cy="60" r="50" stroke="#ddd" stroke-width="10" fill="none"></circle>
+													<circle id="progressCirclePending" cx="60" cy="60" r="50" stroke="green" stroke-width="10" fill="none"
+															stroke-dasharray="314" stroke-dashoffset="314"></circle>
+												</svg>
+												<div class="progress-text">
+													<span id="progressPercentagePending">0%</span>
+												</div>
+											</div>
+											<p>Pending Tasks: <strong>@ViewBag.PendingCount</strong></p>
+										</div>
+										<p class="mt-4 mb-0">All Tasks</p>
+										<h3 class="mb-0 font-weight-bold mt-2 text-dark">@ViewBag.AllTasks</h3>
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
+								<div class="card">
+									<div class="card-body text-center">
+										<h3 class="mb-2 text-dark font-weight-normal">Doing Tasks</h3>
+										<div class="text-center">
+											<div class="progress-circle">
+												<svg width="120" height="120">
+													<circle cx="60" cy="60" r="50" stroke="#ddd" stroke-width="10" fill="none"></circle>
+													<circle id="progressCircleDoing" cx="60" cy="60" r="50" stroke="green" stroke-width="10" fill="none"
+															stroke-dasharray="314" stroke-dashoffset="314"></circle>
+												</svg>
+												<div class="progress-text">
+													<span id="progressPercentageDoing">0%</span>
+												</div>
+											</div>
+											<p>Doing Tasks: <strong>@ViewBag.doingTasksCount</strong></p>
+										</div>
+										<p class="mt-4 mb-0">All Tasks</p>
+										<h3 class="mb-0 font-weight-bold mt-2 text-dark">@ViewBag.AllTasks</h3>
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<div class="col-xl-3  col-lg-6 col-sm-6 grid-margin stretch-card">
+								<div class="card">
+									<div class="card-body text-center">
+										<h3 class="mb-2 text-dark font-weight-normal">Done Tasks</h3>
+										<div class="text-center">
+											<div class="progress-circle">
+												<svg width="120" height="120">
+													<circle cx="60" cy="60" r="50" stroke="#ddd" stroke-width="10" fill="none"></circle>
+													<circle id="progressCircleDone" cx="60" cy="60" r="50" stroke="green" stroke-width="10" fill="none"
+															stroke-dasharray="314" stroke-dashoffset="314"></circle>
+												</svg>
+												<div class="progress-text">
+													<span id="progressPercentageDone">0%</span>
+												</div>
+											</div>
+											<p>Completed Tasks: <strong>@ViewBag.completedTasksCount</strong></p>
+										</div>
+										<p class="mt-4 mb-0">All Tasks</p>
+										<h3 class="mb-0 font-weight-bold mt-2 text-dark">@ViewBag.AllTasks</h3>
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
+
+								<div class="card">
+									<div class="card-body text-center">
+										<h3 class="mb-2 text-dark font-weight-normal">Your Points</h3>
+										<div class="text-center">
+											<div class="progress-circle">
+												<svg width="120" height="120">
+													<circle cx="60" cy="60" r="50" stroke="#ddd" stroke-width="10" fill="none"></circle>
+													<circle id="pointsCircle" cx="60" cy="60" r="50" stroke="green" stroke-width="10" fill="none"
+															stroke-dasharray="314" stroke-dashoffset="314"></circle>
+												</svg>
+												<div class="progress-text">
+													<span id="pointsTotal">@ViewBag.TotalPoints</span> Points
+												</div>
+											</div>
+											<p class="mt-4 mb-0">Remaining Points for Reward</p>
+											<h3 class="mb-0 font-weight-bold mt-2 text-dark">@ViewBag.PointsLeft</h3>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 grid-margin">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="d-flex justify-content-between align-items-center mb-4">
+													<h4 class="card-title mb-0">Recent Activity</h4>
+													<div class="dropdown dropdown-arrow-none">
+														<button class="btn p-0 text-dark dropdown-toggle" type="button" id="dropdownMenuIconButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<i class="mdi mdi-dots-vertical"></i>
+														</button>
+														<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuIconButton1">
+															<h6 class="dropdown-header">Settings</h6>
+															<a class="dropdown-item" href="#">Action</a>
+															<a class="dropdown-item" href="#">Another action</a>
+															<a class="dropdown-item" href="#">Something else here</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">Separated link</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-sm-4 grid-margin  grid-margin-lg-0">
+												<div class="wrapper pb-5 border-bottom">
+													<div class="text-wrapper d-flex align-items-center justify-content-between mb-2">
+														<p class="mb-0 text-dark">Total Profit</p>
+														<span class="text-success"><i class="mdi mdi-arrow-up"></i>2.95%</span>
+													</div>
+													<canvas id="total-profit"></canvas>
+												</div>
+												<div class="wrapper pt-5">
+													<div class="text-wrapper d-flex align-items-center justify-content-between mb-2">
+														<p class="mb-0 text-dark">Expenses</p>
+														<span class="text-success"><i class="mdi mdi-arrow-up"></i>52.95%</span>
+													</div>
+													<canvas id="total-expences"></canvas>
+												</div>
+											</div>
+
+
+
+											<div class="col-lg-9 col-sm-8 grid-margin  grid-margin-lg-0">
+												<div class="pl-0 pl-lg-4">
+													<div class="d-xl-flex justify-content-between align-items-center mb-2">
+														<div class="d-lg-flex align-items-center mb-lg-2 mb-xl-0">
+															<h3 class="text-dark font-weight-bold mr-2 mb-0">Tasks Overview</h3>
+															<h5 class="mb-0">( completed: @ViewBag.CompletedTasksCount )</h5>
+														</div>
+														<div class="d-lg-flex">
+															<p class="mr-2 mb-0">Total Tasks:</p>
+															<p class="text-dark font-weight-bold mb-0">@ViewBag.AllTasks</p>
+														</div>
+													</div>
+													<div class="graph-custom-legend clearfix" id="tasks-legend"></div>
+													<canvas id="tasks-chart"></canvas>
+												</div>
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="container-fluid">
+							<!-- Change to container-fluid for full width -->
+							<h2 class="text-center mb-4">All Tasks</h2> <!-- Centered Title -->
+
+							<div class="row">
+								<div class="col-12">
+									<!-- Ensure full-width table -->
+									<div class="table-responsive">
+										<table class="table table-bordered w-100">
+											<thead class="thead-dark">
+												<tr>
+													<th>Title</th>
+													<th>Description</th>
+													<th>Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												@foreach (var task in Model)
+												{
+													<tr>
+														<td>@task.Title</td>
+														<td>@task.Description</td>
+														<td>
+															@if (task.Status == "Pending")
+															{
+																<span class="badge bg-warning text-dark">Pending</span>
+															}
+															else if (task.Status == "Completed")
+															{
+																<span class="badge bg-success">Completed</span>
+															}
+															else if (task.Status == "In Progress")
+															{
+																<span class="badge bg-primary">In Progress</span>
+															}
+															else
+															{
+																<span class="badge bg-secondary">@task.Status</span>
+															}
+														</td>
+													</tr>
+												}
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- content-wrapper ends -->
+	<!-- partial:partials/_footer.html -->
+	<footer class="footer">
+		<div class="footer-inner-wraper">
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+				<span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+				<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
+			</div>
+		</div>
+	</footer>
+	<!-- partial -->
+</div>
+<!-- main-panel ends -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<style>
+	.progress-circle {
+		position: relative;
+		width: 120px;
+		height: 120px;
+		display: inline-block;
+	}
+
+		.progress-circle svg {
+			transform: rotate(-90deg);
+		}
+
+	.progress-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 18px;
+		font-weight: bold;
+		color: black;
+	}
+</style>
+
+<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var totalTasks = @ViewBag.AllTasks;
+			var pendingTasks = @ViewBag.PendingCount;
+			var doingTasks = @ViewBag.doingTasksCount;
+			var completedTasks = @ViewBag.completedTasksCount;
+
+			function updateProgress(circleId, textId, taskCount) {
+				var percentage = totalTasks > 0 ? (taskCount / totalTasks) * 100 : 0;
+				var dashOffset = 314 - (314 * (percentage / 100));
+
+				var circle = document.getElementById(circleId);
+				var text = document.getElementById(textId);
+
+				circle.style.strokeDashoffset = dashOffset;
+				circle.style.stroke = percentage >= 75 ? "green" : percentage >= 50 ? "orange" : "red";
+				text.innerText = percentage.toFixed(0) + "%";
+			}
+
+			updateProgress("progressCirclePending", "progressPercentagePending", pendingTasks);
+			updateProgress("progressCircleDoing", "progressPercentageDoing", doingTasks);
+			updateProgress("progressCircleDone", "progressPercentageDone", completedTasks);
+		});
+
+		// for points
+
+			document.addEventListener("DOMContentLoaded", function () {
+			var totalPoints = @ViewBag.TotalPoints;
+			var maxPoints = 200; // 20 tasks * 10 points each
+
+			var percentage = totalPoints > 0 ? (totalPoints / maxPoints) * 100 : 0;
+
+			var circle = document.getElementById("pointsCircle");
+			var text = document.getElementById("pointsPercentage");
+
+			var dashOffset = 314 - (314 * (percentage / 100)); // 314 هو محيط الدائرة
+			circle.style.strokeDashoffset = dashOffset;
+
+			circle.style.stroke = percentage >= 75 ? "green" : percentage >= 50 ? "orange" : "red"; // تغيير اللون
+
+			text.innerText = percentage.toFixed(0) + "%";
+		});
+
+
+
+
+
+		var ctx = document.getElementById('tasks-chart').getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: ['Completed', 'Pending', 'In Progress'],
+				datasets: [{
+					label: 'Tasks',
+		data: [@ViewBag.completedTasksCount, @ViewBag.PendingCount, @ViewBag.doingTasksCount],
+					backgroundColor: ['green', 'yellow', 'blue'],
+					borderColor: ['green', 'yellow', 'blue'],
+					borderWidth: 1
+				}]
+			}
+		});
+
+
+
+</script>
+
+
+
+
+

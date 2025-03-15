@@ -1,0 +1,188 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333; /* Dark text color */
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Light gradient background */
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #contact {
+        background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+        padding: 30px;
+        margin: 100px 0;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        border-radius: 15px;
+        backdrop-filter: blur(10px); /* Frosted glass effect */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    }
+
+        #contact h4 {
+            display: block;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #44ce42; /* Purple heading color */
+            text-align: center;
+        }
+
+    fieldset {
+        border: none;
+        margin: 0 0 20px;
+        padding: 0;
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: #44ce42; /* Purple label color */
+    }
+
+    #contact input[type="text"],
+    #contact input[type="date"],
+    #contact input[type="time"],
+    #contact select,
+    #contact textarea {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+        background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+        margin: 0 0 15px;
+        padding: 12px;
+        color: #333; /* Dark text color */
+        font-size: 14px;
+        border-radius: 8px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        #contact input[type="text"]:hover,
+        #contact input[type="date"]:hover,
+        #contact input[type="time"]:hover,
+        #contact select:hover,
+        #contact textarea:hover {
+            border-color: #44ce42; /* Purple border on hover */
+        }
+
+        #contact input[type="text"]:focus,
+        #contact input[type="date"]:focus,
+        #contact input[type="time"]:focus,
+        #contact select:focus,
+        #contact textarea:focus {
+            outline: none;
+            border-color: #44ce42; /* Purple focus border */
+            box-shadow: 0 0 8px rgba(106, 90, 205, 0.3); /* Purple focus shadow */
+        }
+
+    #contact textarea {
+        height: 120px;
+        resize: vertical; /* Allow vertical resizing */
+    }
+
+    #contact button[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #44ce42; /* Purple button color */
+        color: #fff;
+        margin: 20px 0 0;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+        #contact button[type="submit"]:hover {
+            background-color: #5a4ab5; /* Darker purple on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Button shadow on hover */
+        }
+
+        #contact button[type="submit"]:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Button shadow on click */
+        }
+
+    /* Placeholder styling */
+    ::placeholder {
+        color: rgba(0, 0, 0, 0.5); /* Placeholder text color */
+    }
+
+    /* Select dropdown styling */
+    #contact select {
+        appearance: none; /* Remove default arrow */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236a5acd%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 12px;
+    }
+
+        #contact select option {
+            color: #333; /* Option text color */
+            background-color: #fff; /* Option background */
+        }
+</style>
+
+<div class="container">
+    <form id="contact" action="HandelCreate" method="post">
+        <h4>Create New Task</h4>
+        <fieldset>
+            <label for="Title">Title:</label>
+            <input placeholder="Enter task title" type="text" name="Title" id="Title" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <label for="StartDate">Start Date:</label>
+            <input id="StartDate" type="date" name="StartDate" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <label for="StartTime">Start Time:</label>
+            <input id="StartTime" type="time" name="StartTime" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+            <label for="EndTime">End Time:</label>
+            <input id="EndTime" type="time" name="EndTime" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <label for="DueDate">Due Date:</label>
+            <input id="DueDate" type="date" name="DueDate" tabindex="5" required>
+        </fieldset>
+        <fieldset>
+            <label for="Status">Status:</label>
+            <select id="Status" name="Status" tabindex="6" required>
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="Description">Description:</label>
+            <textarea placeholder="Enter task description" name="Description" id="Description" tabindex="7" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+</div>

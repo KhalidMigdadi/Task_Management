@@ -1,0 +1,173 @@
+﻿@model ABK.Models.ToDoTask
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #contact {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        margin: 100px 0;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+        #contact h4 {
+            display: block;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #44ce42;
+            text-align: center;
+        }
+
+    fieldset {
+        border: none;
+        margin: 0 0 20px;
+        padding: 0;
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: #44ce42;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="date"],
+    #contact input[type="time"],
+    #contact select,
+    #contact textarea {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.9);
+        margin: 0 0 15px;
+        padding: 12px;
+        color: #333;
+        font-size: 14px;
+        border-radius: 8px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        #contact input:hover,
+        #contact textarea:hover,
+        #contact select:hover {
+            border-color: #44ce42;
+        }
+
+        #contact input:focus,
+        #contact textarea:focus,
+        #contact select:focus {
+            outline: none;
+            border-color: #44ce42;
+            box-shadow: 0 0 8px rgba(106, 90, 205, 0.3);
+        }
+
+    #contact textarea {
+        height: 120px;
+        resize: vertical;
+    }
+
+    #contact button {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #44ce42;
+        color: #fff;
+        margin: 20px 0 0;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+        #contact button:hover {
+            background-color: #5a4ab5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        #contact button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+</style>
+
+<div class="container">
+    <form id="contact" method="post" asp-action="HandelEdit">
+        <h4>Edit Task</h4>
+        <input asp-for="Id" type="hidden" />
+
+        <fieldset>
+            <label for="Title">Title:</label>
+            <input placeholder="Enter task title" type="text" id="Title" name="Title" value="@Model.Title" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="StartDate">Start Date:</label>
+            <input id="StartDate" type="date" name="StartDate" value="@Model.StartDate?.ToString("yyyy-MM-dd")" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="StartTime">Start Time:</label>
+            <input id="StartTime" type="time" name="StartTime" value="@Model.StartTime?.ToString("HH\\:mm")" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="EndTime">End Time:</label>
+            <input id="EndTime" type="time" name="EndTime" value="@Model.EndTime?.ToString("HH\\:mm")" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="DueDate">Due Date:</label>
+            <input id="DueDate" type="date" name="DueDate" value="@Model.DueDate?.ToString("yyyy-MM-dd")" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="Status">Status:</label>
+            <select id="Status" name="Status" required>
+                <option value="Pending" selected="@(Model.Status == "Pending")">Pending</option>
+                <option value="In Progress" selected="@(Model.Status == "In Progress")">In Progress</option>
+                <option value="Completed" selected="@(Model.Status == "Completed")">Completed</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="Description">Description:</label>
+            <textarea placeholder="Enter task description" id="Description" name="Description" required>@Model.Description</textarea>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">Save Changes</button>
+        </fieldset>
+    </form>
+</div>

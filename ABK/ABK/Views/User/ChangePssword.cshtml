@@ -1,0 +1,149 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Styles -->
+<style>
+    body {
+        background: #f1f8ff;
+    }
+
+    .change-password-container {
+        width: 100%;
+        padding: 0 30px;
+        margin: 0;
+    }
+
+    .change-password-card {
+        width: 60%;
+        padding: 30px;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1), 0 4px 15px rgba(0, 0, 0, 0.05);
+        margin-top: 100px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+        .change-password-card:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+    .form-label {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        border: 1px solid #ced4da;
+        padding: 10px 15px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3), 0 4px 10px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+    .btn-custom {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background-color: #44CE7B;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #44CE7B;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+        }
+
+    h2 {
+        color: #2c3e50;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .change-password-container {
+        margin-top: 80px;
+    }
+</style>
+
+<!-- HTML Form -->
+<div class="change-password-container">
+    <form action="/User/HandelChangePassword" method="post">
+        <div class="change-password-card">
+            <h2 class="text-center">Change Password</h2>
+
+            <input type="hidden" name="id" value="@Context.Session.GetInt32("id")" />
+
+            <!-- Current Password -->
+            <div class="mb-3">
+                <label for="currentPassword" class="form-label">Current Password</label>
+                <input type="password" class="form-control" name="Current_password" id="currentPassword" placeholder="Enter your current password">
+            </div>
+
+            <!-- New Password -->
+            <div class="mb-3">
+                <label for="newPassword" class="form-label">New Password</label>
+                <input type="password" class="form-control" id="newPassword" name="New_password" placeholder="Enter your new password">
+            </div>
+
+            <!-- Confirm New Password -->
+            <div class="mb-3">
+                <label for="confirmNewPassword" class="form-label">Confirm New Password</label>
+                <input type="password" class="form-control" id="confirmNewPassword" name="ReNew_password" placeholder="Confirm your new password">
+            </div>
+
+            <!-- Change Password Button -->
+            <button class="btn btn-primary btn-custom" type="submit">Change Password</button>
+
+            @if (ViewData["Error_user"] != "Change password has been successfully.")
+            {
+                <p style="color:red">@ViewData["Error_user"]</p>
+            }
+            else
+            {
+                <p style="color:green">@ViewData["Error_user"]</p>
+            }
+        </div>
+    </form>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+    // Function to handle password change
+    function changePassword() {
+        const currentPassword = document.getElementById('currentPassword').value;
+        const newPassword = document.getElementById('newPassword').value;
+        const confirmNewPassword = document.getElementById('confirmNewPassword').value;
+
+        if (!currentPassword || !newPassword || !confirmNewPassword) {
+            alert('Please fill in all fields.');
+            return;
+        }
+
+        if (newPassword !== confirmNewPassword) {
+            alert('New password and confirm password do not match.');
+            return;
+        }
+
+        alert('Password changed successfully!');
+    }
+</script>

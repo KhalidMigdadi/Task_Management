@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Site Metas -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+
+    <title>Taskify</title>
+
+	<!-- bootstrap core css -->
+	<link rel="stylesheet" type="text/css" href="~/Page/css/bootstrap.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="~/Page/css/style.css" rel="stylesheet" />
+	<!-- responsive style -->
+	<link href="~/Page/css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+	
+	@RenderBody()
+	@* <main role="main" class="pb-3">
+        </main> *@
+
+    <!-- info section -->
+
+    <section class="info_section ">
+        <div class="info_container layout_padding-top">
+            <div class="container">
+                <div class="info_top">
+                    <div class="info_logo">
+                        <img src="~/Page/images/logo.png" alt="" />
+                        <span>
+                            Taskify
+                        </span>
+                    </div>
+                    <div class="social_box">
+                        <a href="#">
+                            <img src="~/Page/images/fb.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="~/Page/images/twitter.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="~/Page/images/linkedin.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="~/Page/images/instagram.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="~/Page/images/youtube.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info_main">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-2">
+                            <div class="info_link-box">
+                                <h5>
+                                    Useful Link
+                                </h5>
+                                <ul>
+                                    <li class=" active">
+                                        <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="about.html">About </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="work.html">Work </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="category.html">Category </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <h5>
+                                Offices
+                            </h5>
+                            <p>
+                                Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
+                            </p>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 offset-lg-1">
+                            <h5>
+                                Information
+                            </h5>
+                            <p>
+                                Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
+                            </p>
+                        </div>
+
+                        <div class="col-md-3  offset-lg-1">
+                            <div class="info_form ">
+                                <h5>
+                                    Newsletter
+                                </h5>
+                                <form action="">
+                                    <input type="email" placeholder="Email">
+                                    <button>
+                                        Subscribe
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-md-10 mx-auto">
+                        <div class="info_contact layout_padding2">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="#" class="link-box">
+                                        <div class="img-box">
+                                            <img src="~/Page/images/location.png" alt="">
+                                        </div>
+                                        <div class="detail-box">
+                                            <h6>
+                                                Location Irbid
+                                            </h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" class="link-box">
+                                        <div class="img-box">
+                                            <img src="~/Page/images/mail.png" alt="">
+                                        </div>
+                                        <div class="detail-box">
+                                            <h6>
+                                                ABK@gmail.com
+                                            </h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-5">
+                                    <a href="#" class="link-box">
+                                        <div class="img-box">
+                                            <img src="~/Page/images/call.png" alt="">
+                                        </div>
+                                        <div class="detail-box">
+                                            <h6>
+                                                Call +962 77
+                                            </h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+	<footer class="container-fluid footer_section ">
+		<div class="container">
+			<p>
+				&copy; <span id="displayDate"></span> All Rights Reserved By
+				<a href="https://html.design/">ABK</a>
+			</p>
+		</div>
+	</footer>
+	<!-- end  footer section -->
+
+
+	<script src="~/Page/js/jquery-3.4.1.min.js"></script>
+	<script src="~/Page/js/bootstrap.js"></script>
+	<script src="~/Page/js/custom.js"></script>
+
+
+
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

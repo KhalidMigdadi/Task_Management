@@ -1,0 +1,218 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background: #f1f8ff;
+        font-family: 'Helvetica Neue', sans-serif;
+        color: #555;
+    }
+
+    .profile-card {
+        margin: 60px auto;
+        padding: 40px;
+        background: linear-gradient(135deg, #ffffff, #e0f7fa);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        text-align: center;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+        .profile-card:before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 5px;
+            background-color: #44ce42;
+            border-radius: 10px;
+        }
+
+        .profile-card:hover {
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 25px;
+        border: 4px solid #44ce42;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+    .form-control {
+        background-color: #ffffff;
+        border: 2px solid #ddd;
+        border-radius: 50px;
+        padding: 15px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: #44ce42;
+            box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+        }
+
+    .btn-custom {
+        width: 100%;
+        padding: 15px;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        margin-top: 15px;
+    }
+
+    .btn-primary {
+        background-color: #44CE7B;
+        border-color: #44CE7B;
+    }
+
+        .btn-primary:hover {
+            background-color: #44CE7B;
+            border-color: #44CE7B;
+        }
+
+    .btn-warning {
+        background-color: #FF2442;
+        border-color: #FF2442;
+    }
+
+        .btn-warning:hover {
+            background-color: #FF2442;
+            border-color: #FF2442;
+        }
+
+    .text-center h3 {
+        font-size: 26px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .text-center h4 {
+        font-size: 18px;
+        color: #777;
+        font-weight: 500;
+    }
+
+    .upload-btn {
+        color: #44CE7B;
+        font-size: 14px;
+        text-decoration: underline;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+        .upload-btn:hover {
+            color: #44ce42;
+        }
+
+    .alert {
+        background-color: #44CE7B;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+
+
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn-custom {
+        font-size: 14px;
+    }
+
+    }
+</style>
+<div class="profile-card">
+    <div class="text-center">
+        <!-- Profile Image -->
+        @if (!string.IsNullOrEmpty(Context.Session.GetString("image")))
+        {
+            <img src="@Context.Session.GetString("image")" alt="Profile Image" class="profile-img" id="profileImage">
+        }
+        else
+        {
+            <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img" id="profileImage">
+        }
+        <br>
+    </div>
+
+    <!-- Profile Details -->
+    <h3>@Context.Session.GetString("username")</h3>
+    <h4>@Context.Session.GetString("email")</h4>
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" value="@Context.Session.GetString("username")" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" value="@Context.Session.GetString("email")" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="text" class="form-control" id="password" value="@Context.Session.GetString("password")" readonly>
+    </div>
+
+    <!-- Buttons -->
+    <button class="btn btn-primary btn-custom" onclick="location.href='/User/EditProfile'">Edit Profile</button>
+    <button class="btn btn-warning btn-custom" onclick="location.href='/User/ChangePssword'">Change Password</button>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+    // Function to handle image upload
+    document.getElementById('imageUpload').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('profileImage').src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Function to enable editing
+    function editProfile() {
+        document.getElementById('name').removeAttribute('readonly');
+        document.getElementById('email').removeAttribute('readonly');
+        alert('You can now edit your profile details.');
+    }
+
+    // Function to change password
+    function changePassword() {
+        const newPassword = prompt('Enter your new password:');
+        if (newPassword) {
+            document.getElementById('password').value = newPassword;
+            alert('Password changed successfully!');
+        }
+    }
+</script>
